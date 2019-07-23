@@ -1,0 +1,48 @@
+.cat{
+  display: flex;
+  border-bottom: 1px solid #fff;
+  padding: 10rpx;
+}
+.cat-img{
+  height: 250rpx;
+  width: 250rpx;
+}
+.cat-info{
+  flex: 1;
+  font-size: 28rpx;
+	line-height: 1.8;
+  padding-left: 10rpx;
+}
+.cat-name{
+  color: #666;
+  font-size: 35rpx;
+  font-weight: bolder;
+}
+.cat-datail-container{
+  position: relative;
+  height: 40rpx;
+  width: 100%;
+  margin-top: 10rpx;
+  font-size: 26rpx;
+}
+.cat-value,.cat-size{
+  position: absolute;
+}
+.cat-hair,.cat-weight{
+  position: absolute;
+  margin-left: 260rpx;
+}
+.cat-like{
+  position: absolute;
+  right: 0;
+}
+.cat-godetail{
+  position: absolute;
+  left: 50rpx;
+  height: 60rpx;
+  width: 200rpx;
+  background: #E54847;
+  color: #fff;
+  font-size: 27rpx;
+  margin-right: 8rpx;
+}

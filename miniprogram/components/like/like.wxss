@@ -1,0 +1,22 @@
+.container{
+    /* inline-flex消除块状并自适应 */
+    display: inline-flex;
+    flex-direction: row;
+    /* 设置完偏移量后数字会显示不完整,是因为组件高度不够高,这时需要设置一下padding */
+    padding: 10rpx;
+}
+.container image{
+    width: 50rpx;
+    height: 46rpx;
+}
+.container text{ 
+    font-family: "PingFfangSC-Thin"; 
+    font-size: 40rpx;
+    /* 设置完偏移量和padding可能数字还是不是理想效果,不需要再次增大bottom,是因为文字都会间距,消除间距 */
+    line-height: 24rpx;
+    color: #bbbbbb;
+    /* 设置一个偏移量relative   bottom往上偏移,  left往右偏移 */
+    position: relative;
+    bottom: 10rpx;
+    left: 6rpx;
+}

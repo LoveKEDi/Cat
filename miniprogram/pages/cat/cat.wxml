@@ -1,0 +1,19 @@
+<view class="cat" wx:for="{{catList}}" wx:key="{{index}}">
+  <image src="{{item.pic}}" class="cat-img"></image>
+  <view class="cat-info">
+    <view class="cat-name">{{item.name}}</view>
+    <view class="cat-detail">
+      <view class="cat-datail-container">
+        <view class="cat-size">体型： {{item.size}}</view>
+        <view class="cat-hair">毛长： {{item.hair}}</view>
+      </view>
+      <view class="cat-datail-container">
+        <view class="cat-value">价格： {{item.value}}</view>
+        <view class="cat-weight">体重： {{item.weight}}</view>
+      </view>
+      <view class="cat-datail-container">
+        <button class="cat-godetail" bindtap="goDetail" data-catname="{{item.name}}">详情</button>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,31 @@
+<view class="comment-container">
+  <view class="send-container">
+    <van-field
+      class="send-input"
+      value="{{ value }}"
+      placeholder="说说你对{{name}}的爱吧！"
+      size="small"
+      bind:change="onContentChange"
+    />
+    <van-button type="primary" class="send-button" bindtap="addMsg">留言</van-button>
+  </view>
+    <view class="show-container">
+      <view class="show-title">「留言区」</view>
+      <text class="show-info" wx:if="{{msg.length==0}}">暂无留言……^_^</text>
+    <view class="shwo-list">
+      <view class="show-item" wx:for="{{msg}}" wx:key="{{index}}">
+        <view class="item-title">
+          <image src="{{item.userimg}}" class="item-img"></image>
+          <text class="item-name">{{item.username}}</text>
+        </view>
+        <view class="item-text">
+          {{item.content}}
+        </view>
+        <view class="item-date">
+          {{item.date}}
+        </view>
+      </view>
+    </view>
+   </view>
+   
+</view>

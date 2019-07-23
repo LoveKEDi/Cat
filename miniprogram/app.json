@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/cat/cat",
+    "pages/story/story",
+    "pages/detail/detail",
+    "pages/comment/comment"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#EE5C42",
+    "navigationBarTitleText": "欢迎来到喵の世界",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/cat/cat",
+        "text": "猫の种类",
+        "iconPath": "images/cat.png",
+        "selectedIconPath": "images/cat-actived.png"
+      },
+      {
+        "pagePath": "pages/story/story",
+        "text": "猫の故事",
+        "iconPath": "images/story.png",
+        "selectedIconPath": "images/story-actived.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap92.json"
+}
